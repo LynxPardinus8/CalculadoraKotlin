@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4b4b4b"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:hint="Usuario"
+            android:textColorHint="#ffffff"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:ems="10"
+            android:foregroundGravity="bottom"
+            android:textColorLink="#333333"
+            android:hint="Contraseña"
+            android:textColorHint="#ffffff"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="188dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:weightSum="15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bBtnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:onClick="login"
+            android:text="Iniciar Sesion"
+            android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/BtnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:background="#333333"
+            android:onClick="Salir"
+            android:text="Salir"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
